@@ -1,0 +1,348 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 38px;
+  color: #4E5665;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #505050;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.container-content {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url("../img/bg-kuba.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 40px;
+}
+
+.header-top {
+  color: #fff;
+  border: 2px solid #ECB84C;
+  height: 100%;
+  border-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-top__title {
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 277px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
+
+.header-top__text {
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 24px;
+  line-height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -12px;
+}
+
+.header-top__text::after, .header-top__text::before {
+  content: '';
+  width: 100%;
+  border-top: 2px solid #ECB84C;
+}
+
+.header-top__text::before {
+  margin-right: 30px;
+}
+
+.header-top__text::after {
+  margin-left: 30px;
+}
+
+.menu {
+  border-bottom: 2px solid #D0D4D8;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 33px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #909090;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 19px 10px;
+  font-weight: 700;
+}
+
+.menu__link:hover {
+  border-bottom: 4px solid #ECB84C;
+  color: #4E5665;
+}
+
+.vacation {
+  padding: 80px 0;
+  border-bottom: 2px solid #D0D4D8;
+}
+
+.vacation__more {
+  text-align: right;
+  margin-bottom: 36px;
+}
+
+.vacation__more-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #ECB84C;
+  text-decoration: none;
+}
+
+.vacation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.vacation__item-inner {
+  text-align: center;
+  padding-right: 10px;
+}
+
+.vacation__item-inner:last-child {
+  padding-right: 0;
+}
+
+.vacation__item-inner-img {
+  width: 90px;
+  height: 80px;
+  background-size: cover;
+}
+
+.vacation__item-inner-num {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #4E5665;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 32px;
+}
+
+.vacation__item-inner-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #909090;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.kuba {
+  padding-top: 80px;
+}
+
+.kuba__inner {
+  margin-bottom: 64px;
+}
+
+.kuba__history {
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 70px 0px;
+  margin-bottom: 100px;
+}
+
+.kuba__history:nth-child(odd) {
+  background-position: left;
+}
+
+.kuba__history:nth-child(odd) .kuba__history-inner {
+  margin-left: auto;
+}
+
+.kuba__history:nth-child(odd) .kuba__history-inner::before {
+  right: 19px;
+  left: auto;
+  border-right: 2px solid #ECB84C;
+  border-top: 2px solid #ECB84C;
+  border-left: none;
+}
+
+.kuba__history:nth-child(odd) .kuba__history-inner::after {
+  bottom: 19px;
+  left: 19px;
+  border-left: 2px solid #ECB84C;
+  border-bottom: 2px solid #ECB84C;
+  border-right: none;
+}
+
+.kuba__history-inner {
+  padding: 33px 40px;
+  width: 470px;
+  background: #fff;
+  position: relative;
+}
+
+.kuba__history-inner::before, .kuba__history-inner::after {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
+}
+
+.kuba__history-inner::before {
+  top: 19px;
+  left: 19px;
+  border-left: 2px solid #ECB84C;
+  border-top: 2px solid #ECB84C;
+}
+
+.kuba__history-inner::after {
+  bottom: 19px;
+  right: 19px;
+  border-right: 2px solid #ECB84C;
+  border-bottom: 2px solid #ECB84C;
+}
+
+.kuba__history-title {
+  font-size: 24px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  color: #4E5665;
+}
+
+.foto {
+  padding-bottom: 80px;
+}
+
+.foto__kuba {
+  border-top: 1px solid #D0D4D8;
+  padding: 80px 0 0px;
+  opacity: 0.5;
+}
+
+.foto__text {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #D0D4D8;
+  padding-bottom: 50px;
+}
+
+.foto__kuba-img {
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
